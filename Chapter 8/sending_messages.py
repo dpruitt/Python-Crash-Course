@@ -16,5 +16,5 @@ def send_messages(messages_to_send):
         messages.remove(message)
 
 
-send_messages(messages[:])
+send_messages(messages)
 show_messages(messages)
