@@ -1,6 +1,7 @@
 import unittest
 from string_sum import add, parse_numbers
 
+
 class AddTestCase(unittest.TestCase):
 
     def test_add_empty(self):
@@ -30,6 +31,7 @@ class AddTestCase(unittest.TestCase):
     def test_add_newline(self):
         number = add("1\n2\n3")
         self.assertEqual(6, number)
+
 
 if __name__ == "__main__":
     unittest.main()
