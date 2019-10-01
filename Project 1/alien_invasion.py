@@ -95,6 +95,7 @@ class AlienInvasion:
             self.stats.reset_stats()
             self.scoreboard.prep_score()
             self.scoreboard.prep_level()
+            self.scoreboard.prep_ships()
             self.stats.game_active = True
             self.aliens.empty()
             self.bullets.empty()
@@ -138,6 +139,7 @@ class AlienInvasion:
     def _ship_hit(self):
         if self.stats.ships_left > 0:
             self.stats.ships_left -= 1
+            self.scoreboard.prep_ships()
             self.aliens.empty()
             self.bullets.empty()
             self._create_fleet()
