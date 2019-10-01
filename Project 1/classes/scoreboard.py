@@ -45,6 +45,7 @@ class Scoreboard:
     def check_high_score(self):
         if self.stats.score > self.stats.high_score:
             self.stats.high_score = self.stats.score
+            self.stats.update_high_score(self.stats.high_score)
             self.prep_high_score()
 
     def prep_level(self):
