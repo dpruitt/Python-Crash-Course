@@ -1,6 +1,6 @@
 {% extends "learning_logs/base.html" %}
 
-{% block content }
+{% block content %}
 
     <form action="{% url 'users:register' %}" method="post">
         {% csrf_token %}
@@ -10,4 +10,4 @@
         <input type="hidden" name="next" value="{% url 'learning_logs:index' %}" />
     </form>
 
-{% endblock content }
+{% endblock content %}
