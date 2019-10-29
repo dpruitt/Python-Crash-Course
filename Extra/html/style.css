@@ -1,0 +1,26 @@
+body {
+    width: 800px;
+    margin: 10px auto;
+}
+
+.square {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+.square:nth-child(2n+1) {
+    background-color: red;
+}
+
+.square:nth-child(2n) {
+    background-color: black;
+}
+
+.checkerboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+}
